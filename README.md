@@ -17,10 +17,8 @@
 - [PyAudio](https://people.csail.mit.edu/hubert/pyaudio/)
 
 ## 디펜던시 패키지 설치 (Windows 기준)
-```pip install pydub```
-
-```pip install jamo```
-
-```pip install pipwin```
+```pip install -r requirements.txt```
 
 ```pipwin install pyaudio```
+
+<b>주의: PyAudio는 pipwin으로 별도로 설치해야합니다.</b>
