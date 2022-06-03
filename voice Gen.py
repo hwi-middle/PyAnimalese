@@ -10,8 +10,8 @@ char_sounds_high = {}
 
 for idx, item in enumerate(char_list):
     str_idx = str(idx + 1).zfill(2)
-    char_sounds[item] = f'./sources/{str_idx}.mp3'
-    char_sounds_high[item] = f'./sources/high/{str_idx}.mp3'
+    char_sounds[item] = f'./sources/{str_idx}.padata'
+    char_sounds_high[item] = f'./sources/high/{str_idx}.padata'
 
 while True:
     source = input('원본 문자열 입력: ')
