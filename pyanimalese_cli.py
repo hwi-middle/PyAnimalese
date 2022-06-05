@@ -10,8 +10,8 @@ char_sounds_high = {}
 
 for idx, item in enumerate(char_list):
     str_idx = str(idx + 1).zfill(2)
-    char_sounds[item] = f'./sources/{str_idx}.padata'
-    char_sounds_high[item] = f'./sources/high/{str_idx}.padata'
+    char_sounds[item] = AudioSegment.from_mp3(f'./sources/{str_idx}.padata')
+    char_sounds_high[item] = AudioSegment.from_mp3(f'./sources/high/{str_idx}.padata')
 
 while True:
     source = input('원본 문자열 입력: ')
@@ -27,8 +27,8 @@ while True:
         if jamo_ch[0] not in char_list:
             print(f'지원되지 않는 문자를 건너뛰었습니다: {jamo_ch}')
         else:
-            char_sound = AudioSegment.from_mp3(char_sounds[jamo_ch[0]])
-            char_sound_high = AudioSegment.from_mp3(char_sounds_high[jamo_ch[0]])
+            char_sound = char_sounds[jamo_ch[0]]
+            char_sound_high = char_sounds_high[jamo_ch[0]]
 
             octaves = 2 * random.uniform(0.96, 1.15)
             new_sample_rate = int(char_sound.frame_rate * (2.0 ** octaves))
