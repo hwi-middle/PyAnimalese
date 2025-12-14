@@ -1,6 +1,10 @@
 # PyAnimalese에 대하여
 동물의 숲 NPC 목소리로 문장을 읽어주는 프로그램입니다.
 
+## 자주 묻는 질문(FAQ)
+### 이 프로그램을 사용하여 저작물을 만들어도 되나요?
+네, PyAminalese는 [MIT 라이선스](https://github.com/hwi-middle/PyAnimalese/blob/main/License)로 **개인적/상업적 이용이 가능합니다.** 여러분은 PyAmimalese를 어떠한 명시적 허가 없이 자유롭게 이용할 수 있습니다. 메일, 블로그 등 다른 채널로 연락을 주셔도 별도의 답변은 드리지 않습니다.
+
 ## 지원 언어
 - 한국어
 
